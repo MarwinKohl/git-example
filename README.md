@@ -1,29 +1,24 @@
 # git-example
 
-Hallo commit
+hello commit
 
----
+## What are the benefits of commits?
 
-## Was sind die Vorteile von Commits?
+* You can see what has been changed inside of a Git repository.
 
-- Commits zeigen, was man gemacht hat
-- Sie zeigen, den letzten Standpunkt
+## Is there another way to verify a commit was created?
 
-## Gibt es eine andere Möglichkeit zu überprüfen, ob ein Commit erstellt wurde?
+* Through Github, you can view a commit.
 
-- Mit dem Befehl "git log" sehe ich Veränderungen von einem Commit.
-- Mit dem Befehl "git show commit id" kann man prüfen, ob ein Commit erstellt wurde
-- Wie kann ich überprüfen, ob eine Datei verfolgt wird und wenn nicht, sie verfolgen?
-- Mit dem befehl "git status" kann ich es überprüfen. So kann man eine Datei verfolgen und ansehen.
-- Mit dem Befehl "git add" kann man eine Datei verfolgen.
+## How to check if a file is tracked and if not, track it?
 
-## Git-diff
+* With "git-status", and if not then you can use the command "git add".
 
-## In welcher Situation sollten Sie git diff verwenden?
+## In which situation should you use `git diff`?
 
-- Wenn ich genau wissen möchte, was ich geändert habe, und nicht nur die geänderte Datei.
-- Wenn ich ein Vergleich von GIT-Datenquellen vegleichen will
+* Diffing is a function that takes two input data sets and outputs the changes between them. git diff is a multi-use Git command that when executed runs a diff function on Git data sources. These data sources can be commits, branches, files and more.
 
-## Wie erstellt man einen Patch mit git diff?
+## How do you create a patch wit `git diff`?
 
-- mit dem Befehl:  **$ git diff > my_custom_patch_file.patch**
+1. Generate the patch: git diff > some-changes.patch.
+2. Apply the diff: Then copy this patch to your local machine, and apply it to your local working copy with: git apply /path/to/some-changes.patch. And that's it! The changes are now in your working copy and ready to be staged/commit/pushed.
